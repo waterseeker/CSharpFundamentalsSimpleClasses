@@ -12,6 +12,13 @@ namespace CSharpFundamentalsSimpleClasses
             myNewCar.Model = "Cutlass Supreme";
             myNewCar.Year = 1986;
             myNewCar.Color = "Silver";
+
+            Console.WriteLine("{0} - {1} - {2}",
+                myNewCar.Make,
+                myNewCar.Model,
+                myNewCar.Color);
+
+            Console.ReadLine();
         }
     }
 
