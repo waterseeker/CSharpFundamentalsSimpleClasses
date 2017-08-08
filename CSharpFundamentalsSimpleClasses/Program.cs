@@ -18,10 +18,13 @@ namespace CSharpFundamentalsSimpleClasses
                 myNewCar.Model,
                 myNewCar.Color);
 
+            double marketValueOfCar = DetermineMarketValue(myNewCar);
+            Console.WriteLine("This car is worth " + marketValueOfCar.ToString("C") + ".");
+
             Console.ReadLine();
         }
 
-        private static double determineMarketValue(Car car)
+        private static double DetermineMarketValue(Car car)
         {
             double carValue = 100.0;
 
