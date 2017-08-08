@@ -18,8 +18,10 @@ namespace CSharpFundamentalsSimpleClasses
                 myNewCar.Model,
                 myNewCar.Color);
 
-            double marketValueOfCar = DetermineMarketValue(myNewCar);
-            Console.WriteLine("This car is worth " + marketValueOfCar.ToString("C") + ".");
+            //double marketValueOfCar = DetermineMarketValue(myNewCar);
+            //Console.WriteLine("This car is worth " + marketValueOfCar.ToString("C") + ".");
+
+            Console.WriteLine("This car is worth : {0:C}", myNewCar.DetermineMarketValue());
 
             Console.ReadLine();
         }
@@ -42,6 +44,17 @@ namespace CSharpFundamentalsSimpleClasses
         public string Model { get; set; }
         public int Year { get; set; }
         public string Color { get; set; }
+
+        public double DetermineMarketValue()
+        {
+            double carValue = 100.0;
+            if (this.Year > 1990)
+                carValue = 10000.0;
+            else
+                carValue = 2000.0;
+
+            return carValue;
+        }
 
     }
 
