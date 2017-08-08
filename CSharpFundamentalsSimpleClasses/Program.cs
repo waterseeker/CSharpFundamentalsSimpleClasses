@@ -6,6 +6,12 @@ namespace CSharpFundamentalsSimpleClasses
     {
         static void Main(string[] args)
         {
+            Car myNewCar = new Car();
+
+            myNewCar.Make = "Oldsmobile";
+            myNewCar.Model = "Cutlass Supreme";
+            myNewCar.Year = 1986;
+            myNewCar.Color = "Silver";
         }
     }
 
