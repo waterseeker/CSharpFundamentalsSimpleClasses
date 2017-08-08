@@ -20,6 +20,17 @@ namespace CSharpFundamentalsSimpleClasses
 
             Console.ReadLine();
         }
+
+        private static double determineMarketValue(Car car)
+        {
+            double carValue = 100.0;
+
+            //hardcoding value here but you could include code that would
+            //go online, lookup the car and return the current value. 
+
+            return carValue;
+        }
+
     }
 
     class Car
